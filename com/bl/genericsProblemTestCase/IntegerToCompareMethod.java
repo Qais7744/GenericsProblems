@@ -35,13 +35,14 @@ public class IntegerToCompareMethod<T extends Comparable<T>> {
 	}
 
 	private static <T> void printMax(T x, T y, T z, T maximum) {
-		// TODO Auto-generated method stub
 		System.out.printf("Maximum value of %s, %s, and %s is %s\n",x ,y , z, maximum);
 	}
+	
 	public static void main(String[] args) {
 		int x = input();
 		int y = input();
 		int z = input();
 		IntegerToCompareMethod.maximum(x, y, z);
 	}
+	
 }
