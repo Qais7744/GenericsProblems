@@ -2,17 +2,17 @@ package com.bl.genericsProblemTestCase;
 
 import java.util.Scanner;
 
-public class IntegerToCompareMethod<T extends Comparable<T>> {
+public class FloatToCompareMethod<T extends Comparable<T>> {
 	T x, y, z;
 	
-	 public IntegerToCompareMethod(T x, T y, T z) {
+	 public FloatToCompareMethod(T x, T y, T z) {
 		 this.x = x;
 		 this.y = y;
 		 this.z = z;
 	 }
 	
 	 public T maximum() {
-		 return IntegerToCompareMethod.maximum(x, y, z);
+		 return FloatToCompareMethod.maximum(x, y, z);
 	 }
 	 
 	 public static <T extends Comparable<T>> T maximum(T x, T y, T z) {
@@ -27,11 +27,11 @@ public class IntegerToCompareMethod<T extends Comparable<T>> {
 		 return max;
 	 }
 	 
-	public static int input() {
+	public static float input() {
 		System.out.println("Enter the number");
 		Scanner scanner = new Scanner(System.in);
-		int integer = scanner.nextInt();
-		return integer;
+		float value = scanner.nextFloat();
+		return value;
 	}
 
 	private static <T> void printMax(T x, T y, T z, T maximum) {
@@ -39,10 +39,10 @@ public class IntegerToCompareMethod<T extends Comparable<T>> {
 	}
 	
 	public static void main(String[] args) {
-		int x = input();
-		int y = input();
-		int z = input();
-		IntegerToCompareMethod.maximum(x, y, z);
+		float x = input();
+		float y = input();
+		float z = input();
+		FloatToCompareMethod.maximum(x, y, z);
 	}
 	
 }
