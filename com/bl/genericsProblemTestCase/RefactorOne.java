@@ -16,7 +16,7 @@ public class RefactorOne {
 		System.out.printf("Greater Value in between %d, %d, and %d is %d\n\n", 5, 8, 9, maximum(5, 8, 9));
 		System.out.printf("Greater float in betwwn %g, %g, and %g is %g\n\n", 23.567f, 12.534f, 54.658f,
 				maximum(23.567f, 12.534f, 54.658f));
-		System.out.printf("Greater name in between %s, %s, and %s is %s\n\n", "TataMotor", "Maruti", "Tesla",
+		System.out.printf("Greater name in between %s, %s, and %s is %s\n\n", "TataMotor", "Force", "Tesla",
 				maximum("TataMotor", "Maruti", "Tesla"));
 
 	}
