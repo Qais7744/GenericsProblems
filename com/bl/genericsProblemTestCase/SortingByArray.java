@@ -1,9 +1,9 @@
 package com.bl.genericsProblemTestCase;
 
 public class SortingByArray<A extends Comparable<A>> {
-	A []multiple;
+	A[] multiple;
 
-	public SortingByArray(A [] multiple) {
+	public SortingByArray(A[] multiple) {
 		this.multiple = multiple;
 	}
 
@@ -11,7 +11,7 @@ public class SortingByArray<A extends Comparable<A>> {
 		return SortingByArray.maximum(multiple);
 	}
 
-	public static <A extends Comparable<A>> A maximum(A []multiple) {
+	public static <A extends Comparable<A>> A maximum(A[] multiple) {
 		for (int i = 0; i < multiple.length; i++) {
 			for (int p = i; p < multiple.length; p++) {
 				if (multiple[i].compareTo(multiple[p]) < 0) {
@@ -21,7 +21,13 @@ public class SortingByArray<A extends Comparable<A>> {
 				}
 			}
 		}
+		SortingByArray.printMax(multiple[0]);
 		return multiple[0];
+	}
+
+	private static <A> void printMax(A maximum) {
+		System.out.println("Maximum number is :" + " " + maximum);
+		System.out.println();
 	}
 
 	public static void main(String[] args) {
