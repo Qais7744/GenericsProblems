@@ -16,7 +16,7 @@ public class StringToCompareMethod {
 
 	public static void main(String[] args) {
 		String maximumName = StringToCompareMethod.maximumString("Apple", "Peach", "Banana");
-		System.out.println("The Greater Value is: " + maximumName);
+		System.out.println("The Greater Value Name is: " + maximumName);
 	}
 
 }
