@@ -31,7 +31,7 @@ public class SortingByArray<A extends Comparable<A>> {
 	}
 
 	public static void main(String[] args) {
-		Float[] multiFloat = { 68.43f, 54.67f, 34.65f, 79.434f, 56.437f };
+		Float[] multiFloat = { 68.43f, 54.675f, 74.65f, 79.434f, 56.437f };
 		System.out.println("The Maximum value is :" + " " + new SortingByArray<Float>(multiFloat).maximum());
 
 	}
