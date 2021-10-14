@@ -1,9 +1,9 @@
 package com.bl.genericsProblemTestCase;
 
-public class IntegerToCompareMethod {
+public class FloatToCompareMethod {
 
-	public static int maximumInteger(Integer a, Integer b, Integer c) {
-		int maximum = a;
+	public static float maximumFloat(Float a, Float b, Float c) {
+		float maximum = a;
 
 		if (b.compareTo(maximum) > 0) {
 			maximum = b;
@@ -15,7 +15,7 @@ public class IntegerToCompareMethod {
 	}
 
 	public static void main(String[] args) {
-		int maximumNumber = IntegerToCompareMethod.maximumInteger(25, 70, 15);
+		float maximumNumber = FloatToCompareMethod.maximumFloat(2.45f, 70.324f, 15.436f);
 		System.out.println("The Greater Value is: " + maximumNumber);
 	}
 
