@@ -1,38 +1,32 @@
 package com.bl.genericsProblemTestCase;
 
 public class SortingByArray<A extends Comparable<A>> {
-	A[] multiple;
+	A[] value;
 
-	public SortingByArray(A[] multiple) {
-		this.multiple = multiple;
+	public SortingByArray(A[] value) {
+		this.value = value;
 	}
 
 	public A maximum() {
-		return SortingByArray.maximum(multiple);
+		return SortingByArray.maximum(value);
 	}
 
-	public static <A extends Comparable<A>> A maximum(A[] multiple) {
-		for (int i = 0; i < multiple.length; i++) {
-			for (int p = i; p < multiple.length; p++) {
-				if (multiple[i].compareTo(multiple[p]) < 0) {
-					A x = multiple[i];
-					multiple[i] = multiple[p];
-					multiple[p] = x;
+	public static <A extends Comparable<A>> A maximum(A[] value) {
+		for (int i = 0; i < value.length; i++) {
+			for (int p = i; p < value.length; p++) {
+				if (value[i].compareTo(value[p]) < 0) {
+					A x = value[i];
+					value[i] = value[p];
+					value[p] = x;
 				}
 			}
 		}
-		SortingByArray.printMax(multiple[0]);
-		return multiple[0];
-	}
-
-	private static <A> void printMax(A maximum) {
-		System.out.println("Maximum number is :" + " " + maximum);
-		System.out.println();
+		return value[0];
 	}
 
 	public static void main(String[] args) {
-		Float[] multiFloat = { 68.43f, 54.675f, 74.65f, 79.434f, 56.437f };
-		System.out.println("The Maximum value is :" + " " + new SortingByArray<Float>(multiFloat).maximum());
+		String[] multiString = { "Cadillac", "Corvette", "Camry", "Toyota", "Honda", "Maruti", "TataMotors" };
+		System.out.println("The Maximum value is :" + " " + new SortingByArray<String>(multiString).maximum());
 
 	}
 
