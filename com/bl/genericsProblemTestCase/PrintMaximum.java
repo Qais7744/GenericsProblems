@@ -31,7 +31,7 @@ public class PrintMaximum<A extends Comparable<A>> {
 	}
 
 	public static void main(String[] args) {
-		Float[] multiFloat = { 35.436f, 56.6786f, 43.6589f, 23.4366f, 67.7897f, 23.5757f };
+		Float[] multiFloat = { 56.436f, 56.6786f, 40.6589f, 23.4366f, 67.7897f, 23.5757f };
 		System.out.println("The Maximum value is :" + " " + new PrintMaximum<Float>(multiFloat).maximum());
 
 	}
