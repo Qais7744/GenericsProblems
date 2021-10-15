@@ -15,9 +15,7 @@ public class PrintMaximum<A extends Comparable<A>> {
 		for (int i = 0; i < value.length; i++) {
 			for (int p = i; p < value.length; p++) {
 				if (value[i].compareTo(value[p]) < 0) {
-					A name = value[i];
 					value[i] = value[p];
-					value[p] = name;
 				}
 			}
 		}
@@ -31,7 +29,7 @@ public class PrintMaximum<A extends Comparable<A>> {
 	}
 
 	public static void main(String[] args) {
-		Float[] multiFloat = { 56.436f, 56.6786f, 40.6589f, 23.4366f, 67.7897f, 23.5757f };
+		Float[] multiFloat = { 56.436f, 56.6786f, 100.6589f, 23.4366f, 67.7897f, 23.5757f };
 		System.out.println("The Maximum value is :" + " " + new PrintMaximum<Float>(multiFloat).maximum());
 
 	}
