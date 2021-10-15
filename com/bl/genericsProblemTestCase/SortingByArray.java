@@ -15,9 +15,7 @@ public class SortingByArray<A extends Comparable<A>> {
 		for (int i = 0; i < value.length; i++) {
 			for (int p = i; p < value.length; p++) {
 				if (value[i].compareTo(value[p]) < 0) {
-					A x = value[i];
 					value[i] = value[p];
-					value[p] = x;
 				}
 			}
 		}
