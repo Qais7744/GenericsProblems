@@ -25,7 +25,7 @@ public class SortingByArray<A extends Comparable<A>> {
 	}
 
 	public static void main(String[] args) {
-		String[] multiString = { "Cadillac", "Corvette", "Camry", "Toyota", "Honda", "Maruti", "TataMotors" };
+		String[] multiString = { "Cadillac", "Corvette", "Camry", "Toyota", "Tesla", "Maruti", "TataMotors" };
 		System.out.println("The Maximum value is :" + " " + new SortingByArray<String>(multiString).maximum());
 
 	}
